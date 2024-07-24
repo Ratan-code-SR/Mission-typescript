@@ -32,3 +32,17 @@ var teams;
 var result = ["ratan", "kobita", 'lipika'];
 // console.log(teams = ["ratan","hello","lik"]);
 // console.log(result);
+// tuple type
+var student;
+// console.log(student=[34,"ratan"]);
+// enum data type : store constant;  duplicate value is not allowed here
+// enum type = numeric, string, hetergenous
+// numeric enum 
+//  resume
+// any type
+var userName;
+// যখন একাধিক টাইপ কিংবা নির্দিষ্ট কোনো টাইপ নিয়ে কাজ করতে হয়না তখন এই টাইপটি  ব্যবহার করা হয় ।
+// console.log(userName= "ratan"); 
+// console.log(userName= 340);
+// console.log(userName = true);
+// object type
