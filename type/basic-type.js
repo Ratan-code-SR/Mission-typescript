@@ -1,3 +1,4 @@
+"use strict";
 var firstName = "ratan";
 console.log(firstName);
 var age = 45;

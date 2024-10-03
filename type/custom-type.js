@@ -1,3 +1,4 @@
+"use strict";
 // let users: object[]
 // users = []
 // let user1 : {name:string, id:number };
@@ -11,18 +12,18 @@
 // users.push(user3)
 // console.log(users)
 // ==========================================
-var users;
+let users;
 users = [];
-var user1;
+let user1;
 user1 = { name: "ratan", id: 101 };
 users.push(user1);
-var user2;
+let user2;
 user2 = { name: "lucky", id: 102 };
 users.push(user2);
-var user3;
+let user3;
 user3 = { name: "kobita", id: 103 };
 users.push(user3);
-var nameOfStudent;
+let nameOfStudent;
 function printStudentName(student) {
     console.log(student);
 }
