@@ -26,4 +26,8 @@ console.log(playersList);
 
 // learn rest operator
 
+const bros = (...bros:string[])=>{
+ return bros;
+}
 
+bros("ratan","ripa","sima","rika")

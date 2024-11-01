@@ -29,3 +29,11 @@ console.log(playersList);
 // console.log(friends);
 // console.log(friends2);
 // learn rest operator
+var bros = function () {
+    var bros = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        bros[_i] = arguments[_i];
+    }
+    return bros;
+};
+bros("ratan", "ripa", "sima", "rika");
