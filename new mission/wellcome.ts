@@ -25,22 +25,34 @@ let c: Color = Color.Blue;
 
 
 
-console.log({
-    roll, firstName, isAdmin
-});
+console.log({roll, firstName, isAdmin});
 
 
 // Reference type object
 const user: {
     company: string,
     firstName: string,
-    middleName?:string, //this is optional type
+    middleName?:string, //This is optional type of Typescript
     lastName:string,
     isMarried:boolean
 } = {
     company:"cht voice",
-    firstName:"ratan",
-    lastName:"chakma",
+    firstName:"Donald",
+    lastName:"Trump",
     isMarried: true
 
 }
+
+console.log(user.company);
+// 
+// we are learning now array function
+// Learning function
+// Array function
+// Normal function
+
+function add (a:number,b:number){
+    return a + b;
+}
+
+const result = add(3,4)
+console.log(result);
