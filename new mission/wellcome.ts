@@ -28,3 +28,19 @@ let c: Color = Color.Blue;
 console.log({
     roll, firstName, isAdmin
 });
+
+
+// Reference type object
+const user: {
+    company: string,
+    firstName: string,
+    middleName?:string, //this is optional type
+    lastName:string,
+    isMarried:boolean
+} = {
+    company:"cht voice",
+    firstName:"ratan",
+    lastName:"chakma",
+    isMarried: true
+
+}
