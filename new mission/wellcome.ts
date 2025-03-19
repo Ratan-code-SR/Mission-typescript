@@ -56,3 +56,16 @@ function add (a:number,b:number){
 
 const result = add(3,4)
 console.log(result);
+
+
+//  generic constraint  with keyof operator
+
+type Vehicle  = {
+    bike: string,
+    car: string,
+    ship: string
+}
+
+type owner = "bike" | "car" | "ship"; // manually
+
+
