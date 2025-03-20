@@ -95,4 +95,29 @@ function getUserName(user: User): string {
 const users = { name: "RATAN", age: 25 };
 console.log(getUserName(users)); // Output: RATAN
 
- ্
+const person: { name: string; age: number; isStudent: boolean } = {
+    name: "Raton",
+    age: 25,
+    isStudent: true,
+};
+
+console.log(person);
+
+
+const employee: {
+    id: number;
+    name: string;
+    department: {
+        name: string;
+        location: string;
+    };
+} = {
+    id: 1,
+    name: "Shakya Ratan",
+    department: {
+        name: "IT",
+        location: "Rangamati",
+    },
+};
+
+console.log(employee);
