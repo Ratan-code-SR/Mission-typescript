@@ -68,4 +68,31 @@ type Vehicle  = {
 
 type owner = "bike" | "car" | "ship"; // manually
 
+function addNumbers(a: number, b: number): number {
+    return a + b;
+}
 
+console.log(addNumbers(5, 3)); // Output: 8
+
+
+function findItem<T>(arr: T[], item: T): boolean {
+    return arr.includes(item);
+}
+
+console.log(findItem([1, 2, 3, 4], 3));       // Output: true
+console.log(findItem(["a", "b", "c"], "d"));  // Output: false
+
+
+type User = {
+    name: string;
+    age: number;
+};
+
+function getUserName(user: User): string {
+    return user.name;
+}
+
+const users = { name: "RATAN", age: 25 };
+console.log(getUserName(users)); // Output: RATAN
+
+ ্
