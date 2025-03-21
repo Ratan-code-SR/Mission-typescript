@@ -121,3 +121,54 @@ const employee: {
 };
 
 console.log(employee);
+
+
+
+const formatDate = (date: Date): string => {
+  return date.toLocaleDateString("en-GB", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};
+
+
+const filePath = "./daily-update.txt";
+
+
+const updateFile = (content: string): void => {
+  try {
+    fs.writeFileSync(filePath, content);
+    console.log("✅ File updated successfully!");
+  } catch (error) {
+    console.error("❌ Error updating file:", error);
+  }
+};
+
+
+const gitCommitAndPush = (): void => {
+  exec("git add . && git commit -m 'Daily commit for GitHub profile rating' && git push origin main", (error, stdout, stderr) => {
+    if (error) {
+      console.error("❌ Error executing git command:", error);
+      return;
+    }
+    if (stderr) {
+      console.error("⚠️ Git command stderr:", stderr);
+    }
+    console.log("🚀 Git command output:", stdout);
+  });
+};
+
+
+const dailyUpdate = (): void => {
+  const today = new Date();
+  const formattedDate = formatDate(today);
+  const content = `Daily update for: ${formattedDate}\nKeep coding consistently! 💻🚀\n`;
+
+  updateFile(content);
+  gitCommitAndPush();
+};
+
+// ফাংশন কল
+dailyUpdate();
